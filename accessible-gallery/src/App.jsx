@@ -67,12 +67,12 @@ export default function App() {
         backgroundImage: images[index]
           ? `url(${images[index].urls.regular})`
           : "none",
-        backgroundSize: "100% 100%",
-        backgroundPosition: "center center",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
         minHeight: "100vh",
-        minWidth: "100vw",
         position: "relative",
+        overflow: "hidden",
       }}
     >
       <div className="thumbnails">
